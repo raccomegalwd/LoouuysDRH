@@ -26,10 +26,6 @@ jobs:
           output: ${{ env.REPORT_FILE }}
           format: markdown
           ## Do not fail this step on broken links
-          fail: false
-          ## Allow pages replying with 200 (OK), 204 (No Content),
-          ## 206 (Partial Content), 400 (Bad Request), 403 (Forbidden),
-          ## 500 (Internal Server Error), 502 (Bad Gateway), or 504 (Gateway Timeout)
           ## in at most 20 seconds with HTML content.
           args: >-
             --verbose
